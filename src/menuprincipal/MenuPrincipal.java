@@ -14,6 +14,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import java.util.ArrayList;
 
 /**
  * @author Ismael
@@ -24,6 +25,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
      * Creates new form MenuPrincipal
      */
 
+    public final Color ORO = new Color(0x806802);
+    public final Color PLATA = new Color(0x4B4A4A);
+    public final Color BRONCE = new Color(0x965318);
     public final Color ROJO = new Color(0x720404);
     public final Color VERDE = new Color(0x017B00);
     public MenuPrincipal() {
@@ -66,7 +70,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btnMostrarResumen.setText("Cargar números premiados");
         btnMostrarResumen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMostrarResumenActionPerformed(evt);
+                try {
+                    btnMostrarResumenActionPerformed(evt);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
 
@@ -157,7 +165,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
         taMuestraResultado.setText("");
     }
 
-    private void btnMostrarResumenActionPerformed(java.awt.event.ActionEvent evt) {
+    private void btnMostrarResumenActionPerformed(java.awt.event.ActionEvent evt) throws Exception {
+
+        ArrayList<Numero> numerosPremiados = GestorPeticionesHTTP.enviaNumerosPremiadosEnResumen();
+        Numero gordo = numerosPremiados.get(0);
+        Numero segundoPremio = numerosPremiados.get(1);
+        Numero tercerPremio = numerosPremiados.get(2);
+
+        taMuestraResultado.setText("EL GORDO: " + gordo.getNumero() + " -- " + gordo.getPremio() + " €\n" +
+                                   "Segundo premio: " + segundoPremio.getNumero() + " -- " + segundoPremio.getPremio() + " €\n" +
+                                   "Tercer premio: " + tercerPremio.getNumero() + " -- " + tercerPremio.getPremio());
 
     }
 

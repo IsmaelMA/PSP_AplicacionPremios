@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2145a793-6aba-4a9c-b7ea-5a191ff69ba9" name="Changes" comment="Firts commit">
+    <list default="true" id="2145a793-6aba-4a9c-b7ea-5a191ff69ba9" name="Changes" comment="Retoco el GestorPeticionesHTTP, ahora devuelve un objeto Número cada vez que es llamado.&#10;&#10;Procedo a iniciar el &quot;resumen&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PSP_AplicacionPremios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PSP_AplicacionPremios.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gestorpeticiones/GestorPeticionesHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestorpeticiones/GestorPeticionesHTTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menuprincipal/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuprincipal/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/numero/Numero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numero/Numero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,11 +80,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674501382252</updated>
-      <workItem from="1674501383333" duration="4397000" />
+      <workItem from="1674501383333" duration="5850000" />
     </task>
+    <task id="LOCAL-00001" summary="Retoco el GestorPeticionesHTTP, ahora devuelve un objeto Número cada vez que es llamado.&#10;&#10;Procedo a iniciar el &quot;resumen&quot;">
+      <created>1674506102087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674506102087</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Retoco el GestorPeticionesHTTP, ahora devuelve un objeto Número cada vez que es llamado.&#10;&#10;Procedo a iniciar el &quot;resumen&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retoco el GestorPeticionesHTTP, ahora devuelve un objeto Número cada vez que es llamado.&#10;&#10;Procedo a iniciar el &quot;resumen&quot;" />
   </component>
 </project>
